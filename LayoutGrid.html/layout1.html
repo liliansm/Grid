@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout1</title>
+    <style>
+        body{
+            margin: 100px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 2em;
+            grid-row-gap: 3em;
+            grid-auto-rows: 300px;
+            
+        }
+        div{
+            border-radius: 18px;
+            color: bisque;
+            font-size: 60px;
+            text-align: left;
+            
+            
+        }
+        .a{
+            background-color: rgb(48, 54, 52);
+            
+        }
+        .b{
+            background-color: rgb(48, 54, 52);
+        }
+        .c{
+            background-color: rgb(48, 54, 52);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+        <div class="a">D</div>
+        <div class="b">E</div>
+        <div class="c">F</div>
+    </div>
+</body>
+</html>

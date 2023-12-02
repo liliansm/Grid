@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout2</title>
+</head>
+<body>
+    <style>
+        body{
+            margin: 200px;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-column-gap: 1em;
+            grid-row-gap: 1em;
+            grid-auto-rows: 200px;
+            
+        }
+        div{
+            border-radius: 18px;
+            color: bisque;
+            font-size: 80px;
+            text-align: left;
+            
+            
+        }
+        .box1{
+            background-color: rgb(48, 54, 52);
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .box2{
+            background-color: rgb(48, 54, 52);
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            
+        }
+        .box3{
+            background-color: rgb(48, 54, 52);
+            grid-column-start: 1;
+            grid-column-end: 2;
+        
+        }
+        .box4{
+            background-color: rgb(48, 54, 52);
+            grid-column-start: 2;
+            grid-column-end: 3;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">A</div>
+        <div class="box2">B</div>
+        <div class="box3">B</div>
+        <div class="box4">D</div>
+    </div>
+</body>
+</html>
